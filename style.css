@@ -90,6 +90,40 @@ footer {
     margin-top: 2rem;
     border-radius: 0 0 8px 8px;
 }
+/* Barra di navigazione in basso */     
+.bottom-nav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0.7rem 0;
+    z-index: 100;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.07);
+}
+.bottom-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.2s;
+}
+.bottom-nav a:hover {
+    color: #ff9800;
+}
+.bottom-nav img {
+    vertical-align: middle;
+}
+.icon-svg svg {
+    display: inline-block;
+    vertical-align: middle;
+}
+
 @media (max-width: 700px) {
     .projects-container {
         flex-direction: column;
