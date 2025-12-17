@@ -1,3 +1,10 @@
+// Dark mode toggle
+const darkToggle = document.getElementById('darkModeToggle');
+if (darkToggle) {
+    darkToggle.addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+    });
+}
 // Gestione semplice del form di contatto
 const form = document.getElementById('contact-form');
 const formMessage = document.getElementById('form-message');

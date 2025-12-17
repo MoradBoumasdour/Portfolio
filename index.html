@@ -7,45 +7,99 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+        <button id="darkModeToggle" class="dark-toggle" title="Attiva/disattiva Dark Mode">🌙</button>
+        <button id="langToggle" class="lang-toggle" title="Cambia lingua">EN</button>
     <div id="overlay" class="overlay">
         <div class="overlay-content">
             <button id="open-portfolio" class="open-btn">ENTRA</button>
         </div>
     </div>
     <header>
-        <h1>Portfolio di Morad Boumasdour</h1>
         <nav>
-            <ul>
-                <li><a href="#about">Chi sono</a></li>
-                <li><a href="#projects">Progetti</a></li>
-                <li><a href="#contact">Contatti</a></li>
+            <ul id="mainNav">
+                <li><a href="#about" id="nav-about">Chi sono</a></li>
+                <li><a href="#skills" id="nav-skills">Skill</a></li>
+                <li><a href="#education" id="nav-education">Formazione</a></li>
+                <li><a href="#experience" id="nav-experience">Esperienze</a></li>
+                <li><a href="#projects" id="nav-projects">Progetti</a></li>
+                <li><a href="#contact" id="nav-contact">Contatti</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="about">
-            <h2>Chi sono</h2>
-            <p>
-                Sono uno studente magistrale al Politecnico di Torino in Ingegneria Meccatronica, appassionato di tecnologia e innovazione. Nel mio percorso universitario ho sviluppato diversi progetti pratici, tra cui un'applicazione <strong>Doc Drag & Drop</strong> e un <strong>Salary Calculator</strong>, entrambi disponibili sul mio profilo GitHub. Mi piace affrontare nuove sfide e imparare continuamente, combinando competenze di programmazione e ingegneria per creare soluzioni utili ed efficienti.
-            </p>
-        </section>
-        <section id="projects">
-            <h2>Progetti</h2>
-            <div class="projects-container">
-                <div class="project-card">
-                    <h3>Doc Drag & Drop</h3>
-                    <p>Applicazione web per il caricamento e la gestione di documenti tramite drag & drop. <br>
-                    <a href="https://github.com/MoradBoumasdour/doc-drag-drop" target="_blank">Guarda su GitHub</a></p>
+    <div class="main-flex-row">
+
+        <div class="about-col" style="display:flex;flex-direction:column;flex:0 0 36%;min-width:260px;max-width:400px;">
+            <section id="about" class="about-side about-header-merged section-card about-left-standalone">
+                <h2 class="about-title-tight">About Me</h2>
+                <div class="about-profile-merged">
+                    <img src="PPianoMorad.jpg" alt="Morad Boumasdour" class="profile-img-large">
+                    <h1 class="about-name-large">Morad Boumasdour</h1>
                 </div>
-                <div class="project-card">
-                    <h3>Salary Calculator</h3>
-                    <p>Strumento per il calcolo dello stipendio netto/mensile. <br>
-                    <a href="https://github.com/MoradBoumasdour/salary-calculator" target="_blank">Guarda su GitHub</a></p>
+                <p>
+                    I am a final-year undergraduate student in Computer Engineering at the Polytechnic of Turin, fascinated by how technology can transform complex challenges into clear and functional solutions. My experiences as a basketball player have taught me discipline, resilience, and teamwork, while volunteering in emergency contexts with Misericordia has strengthened my ability to stay calm and reliable under pressure. These paths, together with my academic journey, reflect my commitment, punctuality, and adaptability—qualities I strive to bring into every challenge.<br><br>
+                    <strong>Contact:</strong> <br>
+                    Tel: +39 391 1479441<br>
+                    Email: morad.boumasdour@gmail.com<br>
+                    Location: Torino (TO)
+                </p>
+                <div class="about-extra">
+                    <strong id="about-languages-label">Languages:</strong> <span id="about-languages-list">Italian (Native), Arab (Native), English (B2), French (A1)</span>
                 </div>
-            </div>
-        </section>
-        <section id="contact">
-            <h2>Contatti</h2>
+            </section>
+            <section id="skills" class="section-card skills-standalone">
+                <h2 class="skills-title-tight">Skill</h2>
+                <ul class="skills-list">
+                    <li>Reliability & Responsibility</li>
+                    <li>Problem-Solving & Analytical Thinking</li>
+                    <li>Teamwork & Collaboration</li>
+                    <li>Adaptability & Fast Learning</li>
+                    <li>Stress Management & Resilience</li>
+                    <li>Communication Skills</li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="projects-and-details" style="display:flex;flex-direction:column;flex:0 0 58%;min-width:260px;max-width:700px;">
+            <section id="projects" class="projects-side">
+                <h2 class="projects-title-tight projects-title-left">Projects</h2>
+                <div class="projects-container">
+                    <div class="project-card">
+                        <h3 id="proj1-title">Doc Drag & Drop</h3>
+                        <p id="proj1-desc">Applicazione web per il caricamento e la gestione di documenti tramite drag & drop. <br>
+                        <a href="https://github.com/MoradBoumasdour/doc-drag-drop" target="_blank" id="proj1-link">Guarda su GitHub</a></p>
+                    </div>
+                    <div class="project-card">
+                        <h3 id="proj2-title">Salary Calculator</h3>
+                        <p id="proj2-desc">Strumento per il calcolo dello stipendio netto/mensile. <br>
+                        <a href="https://github.com/MoradBoumasdour/salary-calculator" target="_blank" id="proj2-link">Guarda su GitHub</a></p>
+                    </div>
+                </div>
+            </section>
+            <section id="education" class="section-card studies-standalone education-experience-wide">
+                <h2 class="education-title-tight">Education</h2>
+                <ul class="education-list">
+                    <li><strong>01/2022 - PRESENT</strong> Politecnico di Torino - Torino (TO)<br>Bachelor in Computer Engineering</li>
+                    <li><strong>2017 - 2022</strong> Istituto superiore Licei Poliziani - Montepulciano (SI)<br>Secondary School Education Diploma with grade: 90 / 100<br>Liceo Scientifico delle Scienze Applicate</li>
+                    <li>B2 English certification issued by IELTS</li>
+                </ul>
+            </section>
+            <section id="experience" class="section-card studies-standalone education-experience-wide">
+                <h2 class="experience-title-tight">Experience</h2>
+                <ul class="experience-list">
+                    <li><strong>01/2022 - PRESENT</strong> II° level emergency responder volunteer at Misericordia di Sinalunga</li>
+                    <li>Construction and programming of a robotic arm using Arduino, presented at Rotary Club of Chianciano Chiusi Montepulciano</li>
+                    <li>Knowledge of programming languages: Python, C, Matlab, Java, SQL, BASH, Assembly</li>
+                    <li>Basketball player - ASINALONGA BASKET 09/2016 - 06/2022</li>
+                    <li>Waiter - Ristorante da Forcillo</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    </div>
+    <div class="contact-card-wrapper">
+        <section id="contact" class="section-card contact-wide">
+            <h2 class="contact-title-tight">Contatti</h2>
             <form id="contact-form">
                 <input type="text" name="name" placeholder="Nome" required>
                 <input type="email" name="email" placeholder="Email" required>
@@ -54,6 +108,7 @@
             </form>
             <div id="form-message"></div>
         </section>
+    </div>
     </main>
     <footer>
         <p>&copy; 2025 Morad Boumasdour. Tutti i diritti riservati.</p>
@@ -79,5 +134,89 @@
         </a>
     </nav>
     <script src="script.js"></script>
+</body>
+<script>
+// Cambio lingua IT/EN
+const langToggle = document.getElementById('langToggle');
+let isItalian = true;
+langToggle.addEventListener('click', function() {
+    isItalian = !isItalian;
+    // Header nav
+    document.getElementById('nav-about').textContent = isItalian ? 'About' : 'Chi sono';
+    document.getElementById('nav-skills').textContent = isItalian ? 'Skills' : 'Competenze';
+    document.getElementById('nav-education').textContent = isItalian ? 'Education' : 'Formazione';
+    document.getElementById('nav-experience').textContent = isItalian ? 'Experience' : 'Esperienze';
+    document.getElementById('nav-projects').textContent = isItalian ? 'Projects' : 'Progetti';
+    document.getElementById('nav-contact').textContent = isItalian ? 'Contact' : 'Contatti';
+    // Titoli
+    document.querySelector('.about-title-tight').textContent = isItalian ? 'About Me' : 'Chi sono';
+    document.querySelector('.projects-title-tight').textContent = isItalian ? 'Projects' : 'Progetti';
+    document.querySelector('#contact h2').textContent = isItalian ? 'Contact' : 'Contatti';
+    document.querySelector('.education-title-tight').textContent = isItalian ? 'Education' : 'Formazione';
+    document.querySelector('.experience-title-tight').textContent = isItalian ? 'Experience' : 'Esperienze';
+    document.querySelector('.skills-title-tight').textContent = isItalian ? 'Skills' : 'Competenze';
+    // Languages
+    document.getElementById('about-languages-label').textContent = isItalian ? 'Languages:' : 'Lingue:';
+    document.getElementById('about-languages-list').textContent = isItalian
+        ? 'Italian (Native), Arab (Native), English (B2), French (A1)'
+        : 'Italiano (Madrelingua), Arabo (Madrelingua), Inglese (B2), Francese (A1)';
+    // Testo About (con contatti inclusi)
+    document.querySelector('#about p').innerHTML = isItalian
+        ? `I'm a master's student at Politecnico di Torino in Mechatronic Engineering, passionate about technology and innovation. During my studies, I developed several practical projects, including a Doc Drag & Drop app and a Salary Calculator, both available on my GitHub profile. I love facing new challenges and learning continuously, combining programming and engineering skills to create useful and efficient solutions.<br><br>
+        <strong>Contact:</strong> <br>
+        Tel: +39 391 1479441<br>
+        Email: morad.boumasdour@gmail.com<br>
+        Location: Torino (TO)`
+        : `Sono uno studente magistrale al Politecnico di Torino in Ingegneria Meccatronica, appassionato di tecnologia e innovazione. Nel mio percorso universitario ho sviluppato diversi progetti pratici, tra cui un'applicazione <strong>Doc Drag & Drop</strong> e un <strong>Salary Calculator</strong>, entrambi disponibili sul mio profilo GitHub. Mi piace affrontare nuove sfide e imparare continuamente, combinando competenze di programmazione e ingegneria per creare soluzioni utili ed efficienti.<br><br>
+        <strong>Contatti:</strong> <br>
+        Tel: +39 391 1479441<br>
+        Email: morad.boumasdour@gmail.com<br>
+        Location: Torino (TO)`;
+    // Progetti
+    document.getElementById('proj1-title').textContent = isItalian ? 'Doc Drag & Drop' : 'Doc Drag & Drop';
+    document.getElementById('proj1-desc').innerHTML = isItalian
+        ? 'Web app for uploading and managing documents via drag & drop. <br><a href="https://github.com/MoradBoumasdour/doc-drag-drop" target="_blank" id="proj1-link">View on GitHub</a>'
+        : 'Applicazione web per il caricamento e la gestione di documenti tramite drag & drop. <br><a href="https://github.com/MoradBoumasdour/doc-drag-drop" target="_blank" id="proj1-link">Guarda su GitHub</a>';
+    document.getElementById('proj2-title').textContent = isItalian ? 'Salary Calculator' : 'Salary Calculator';
+    document.getElementById('proj2-desc').innerHTML = isItalian
+        ? 'Tool for calculating net/monthly salary. <br><a href="https://github.com/MoradBoumasdour/salary-calculator" target="_blank" id="proj2-link">View on GitHub</a>'
+        : 'Strumento per il calcolo dello stipendio netto/mensile. <br><a href="https://github.com/MoradBoumasdour/salary-calculator" target="_blank" id="proj2-link">Guarda su GitHub</a>';
+    // Education & Experience
+     document.querySelector('.education-list').innerHTML = isItalian
+          ? `<li><strong>01/2022 - PRESENT</strong> Politecnico di Torino - Torino (TO)<br>Bachelor in Computer Engineering</li>
+              <li><strong>2017 - 2022</strong> Istituto superiore Licei Poliziani - Montepulciano (SI)<br>Secondary School Education Diploma with grade: 90 / 100<br>Liceo Scientifico delle Scienze Applicate</li>
+              <li>B2 English certification issued by IELTS</li>`
+          : `<li><strong>01/2022 - IN CORSO</strong> Politecnico di Torino - Torino (TO)<br>Laurea triennale in Ingegneria Informatica</li>
+              <li><strong>2017 - 2022</strong> Istituto superiore Licei Poliziani - Montepulciano (SI)<br>Diploma di scuola superiore con voto: 90 / 100<br>Liceo Scientifico delle Scienze Applicate</li>
+              <li>Certificazione inglese B2 rilasciata da IELTS</li>`;
+     document.querySelector('.experience-list').innerHTML = isItalian
+          ? `<li><strong>01/2022 - PRESENT</strong> II° level emergency responder volunteer at Misericordia di Sinalunga</li>
+              <li>Construction and programming of a robotic arm using Arduino, presented at Rotary Club of Chianciano Chiusi Montepulciano</li>
+              <li>Knowledge of programming languages: Python, C, Matlab, Java, SQL, BASH, Assembly</li>
+              <li>Basketball player - ASINALONGA BASKET 09/2016 - 06/2022</li>
+              <li>Waiter - Ristorante da Forcillo</li>`
+          : `<li><strong>01/2022 - IN CORSO</strong> Volontario soccorritore di II livello presso Misericordia di Sinalunga</li>
+              <li>Costruzione e programmazione di un braccio robotico con Arduino, presentato al Rotary Club di Chianciano Chiusi Montepulciano</li>
+              <li>Conoscenza linguaggi di programmazione: Python, C, Matlab, Java, SQL, BASH, Assembly</li>
+              <li>Giocatore di basket - ASINALONGA BASKET 09/2016 - 06/2022</li>
+              <li>Cameriere - Ristorante da Forcillo</li>`;
+    // Skills
+    document.querySelector('.skills-list').innerHTML = isItalian
+        ? `<li>Reliability & Responsibility</li>
+           <li>Problem-Solving & Analytical Thinking</li>
+           <li>Teamwork & Collaboration</li>
+           <li>Adaptability & Fast Learning</li>
+           <li>Stress Management & Resilience</li>
+           <li>Communication Skills</li>`
+        : `<li>Affidabilità e responsabilità</li>
+           <li>Problem solving e pensiero analitico</li>
+           <li>Lavoro di squadra e collaborazione</li>
+           <li>Adattabilità e apprendimento rapido</li>
+           <li>Gestione dello stress e resilienza</li>
+           <li>Capacità comunicative</li>`;
+    // Tasto lingua
+    langToggle.textContent = isItalian ? 'IT' : 'EN';
+});
+</script>
 </body>
 </html>
